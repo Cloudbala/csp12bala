@@ -34,18 +34,18 @@ public class Java8PocApplication {
         Apple a1 = new Apple();
         Apple a2 = new Apple();
         Apple a3 = new Apple();
-        //Apple a4 = new Apple();
+       Apple a4 = new Apple();
 
         a1.setColor("RED");
         a2.setColor("GREEN");
         a3.setColor("ORANGE");
-      //  a4.setColor("GREEN");
+      a4.setColor("GREEN");
 
         List<Apple> app = new ArrayList<>();
         app.add(a1);
         app.add(a2);
         app.add(a3);
-       // app.add(a4);
+       app.add(a4);
 
         //filterApples(app, Apple::isGreenApple);
         List<Apple> apples = filterApples(app, (Apple a) -> "GREEN".equals(a.getColor()));
